@@ -32,27 +32,47 @@
 		}
 	})
 
-	const elem = document.querySelector('.event_box');
-	const filtersElem = document.querySelector('.event_filter');
-	if (elem) {
-		const rdn_events_list = new Isotope(elem, {
-			itemSelector: '.event_outer',
-			layoutMode: 'masonry'
+	// Program Cards Filter Functionality
+	const programGrid = document.querySelector('.program-grid');
+	const filterButtons = document.querySelectorAll('.filter-btn');
+
+	if (programGrid && filterButtons.length > 0) {
+		// Initialize Isotope for program grid
+		const iso = new Isotope(programGrid, {
+			itemSelector: '.program-item',
+			layoutMode: 'fitRows',
+			percentPosition: true,
+			transitionDuration: '0.4s',
+			getSortData: {
+				order: '[data-order] parseInt'
+			},
+			sortBy: 'order'
 		});
-		if (filtersElem) {
-			filtersElem.addEventListener('click', function(event) {
-				if (!matchesSelector(event.target, 'a')) {
-					return;
-				}
-				const filterValue = event.target.getAttribute('data-filter');
-				rdn_events_list.arrange({
-					filter: filterValue
+
+		// Filter items on button click
+		filterButtons.forEach(button => {
+			button.addEventListener('click', function() {
+				// Remove active class from all buttons
+				filterButtons.forEach(btn => btn.classList.remove('active'));
+				
+				// Add active class to clicked button
+				this.classList.add('active');
+				
+				// Get filter value
+				const filterValue = this.getAttribute('data-filter');
+				
+				// Filter items while maintaining the specified order
+				iso.arrange({
+					filter: filterValue,
+					sortBy: 'order'
 				});
-				filtersElem.querySelector('.is_active').classList.remove('is_active');
-				event.target.classList.add('is_active');
-				event.preventDefault();
 			});
-		}
+		});
+
+		// Initial sort to ensure correct order on page load
+		iso.arrange({
+			sortBy: 'order'
+		});
 	}
 
 

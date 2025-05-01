@@ -66,8 +66,8 @@ https://templatemo.com/tm-586-scholar
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="#about">About</a></li>
+                      <li class="scroll-to-section"><a href="#whyrelith">Why Rylith?</a></li>
                       <li class="scroll-to-section"><a href="#programs">Programs</a></li>
-                      <li class="scroll-to-section"><a href="#why-rylith">Why Rylith?</a></li>
                       <li class="scroll-to-section"><a href="#partner">Partner With Us</a></li>
                       <li class="scroll-to-section"><a href="#contact">Contact</a></li>
                   </ul>   
@@ -160,20 +160,6 @@ https://templatemo.com/tm-586-scholar
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>NEP 2020 Aligned</h4>
-              <p>Our curriculum aligns with the National Education Policy's vision for holistic education.</p>
-              <div class="main-button">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#nepModal">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service-item">
             <div class="icon" style="background-color: #7A6AD8;">
               <img src="mission-svgrepo-com.svg" alt="Mission & Vision" style="width: 50px; height: 52px; filter: brightness(0) invert(1);">
             </div>
@@ -182,6 +168,20 @@ https://templatemo.com/tm-586-scholar
               <p>Empowering students to become problem-solvers, leaders, and responsible global citizens.</p>
               <div class="main-button">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#partnersModal">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-02.png" alt="short courses">
+            </div>
+            <div class="main-content">
+              <h4>NEP 2020 Aligned</h4>
+              <p>Our curriculum aligns with the National Education Policy's vision for holistic education.</p>
+              <div class="main-button">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#nepModal">Learn More</a>
               </div>
             </div>
           </div>
@@ -204,7 +204,8 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-  <div class="section about-us">
+  <!-- Why Choose Us Section -->
+  <div class="section about-us" id="whyrelith">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1">
@@ -285,107 +286,119 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
+  <!-- Programs Section -->
   <section class="section courses" id="programs">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>OUR OFFERINGS</h6>
+            <h6 class="purple-text">LATEST PROGRAMS</h6>
             <h2>The MPWR Program</h2>
-            <p>Rylith Academy offers the MPWR program, a comprehensive initiative designed to equip students with the critical skills needed for success in the 21st century. Through MPWR, students will develop a range of competencies that not only complement traditional academics but also prepare them for the challenges and opportunities of the modern world.</p>
+            <p>Rylith Academy offers the MPWR program, a comprehensive initiative designed to equip students with the critical skills needed for success in the 21st century.</p>
           </div>
         </div>
       </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">All Programs</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".leadership">Communication</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".financial">Financial</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".digital">Digital</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wellness">Wellness</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".career">Career</a>
-        </li>
-      </ul>
-      <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 leadership">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
-              <span class="category">Communication</span>
+      
+      <!-- Filter Buttons -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6">
+          <div class="filter-buttons rounded-pill bg-light px-3 py-2 d-flex justify-content-between">
+            <button class="filter-btn active rounded-pill px-4 py-2" data-filter="*">Show All</button>
+            <button class="filter-btn rounded-pill px-4 py-2" data-filter=".leadership">Leadership</button>
+            <button class="filter-btn rounded-pill px-4 py-2" data-filter=".digital">Digital</button>
+            <button class="filter-btn rounded-pill px-4 py-2" data-filter=".career">Career</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Program Cards -->
+      <div class="row program-grid">
+        <!-- Card 1: Communication, Advocacy and Leadership -->
+        <div class="col-lg-4 col-md-6 mb-4 program-item leadership" data-order="1">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="assets/images/course-01.jpg" alt="Communication" class="img-fluid">
+              <span class="category-badge">LEADERSHIP</span>
+              <div class="price-tag">₹250</div>
             </div>
-            <div class="down-content">
-              <span class="author">Leadership Skills</span>
+            <div class="program-content">
+              <span class="instructor">Communication Skills</span>
               <h4>Communication, Advocacy and Leadership</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 financial">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
-              <span class="category">Financial</span>
+        
+        <!-- Card 2: Financial Literacy -->
+        <div class="col-lg-4 col-md-6 mb-4 program-item career" data-order="2">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="assets/images/course-02.jpg" alt="Financial" class="img-fluid">
+              <span class="category-badge">FINANCIAL</span>
+              <div class="price-tag">₹240</div>
             </div>
-            <div class="down-content">
-              <span class="author">Money Management</span>
+            <div class="program-content">
+              <span class="instructor">Money Management</span>
               <h4>Financial Literacy</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wellness">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
-              <span class="category">Wellness</span>
+        
+        <!-- Card 3: Holistic Wellness -->
+        <div class="col-lg-4 col-md-6 mb-4 program-item digital" data-order="3">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="assets/images/course-03.jpg" alt="Wellness" class="img-fluid">
+              <span class="category-badge">WELLNESS</span>
+              <div class="price-tag">₹320</div>
             </div>
-            <div class="down-content">
-              <span class="author">Health & Balance</span>
+            <div class="program-content">
+              <span class="instructor">Health & Balance</span>
               <h4>Holistic Wellness</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 digital">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
-              <span class="category">Digital</span>
+        
+        <!-- Card 4: Digital Literacy -->
+        <div class="col-lg-4 col-md-6 mb-4 program-item digital" data-order="4">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="assets/images/course-04.jpg" alt="Digital" class="img-fluid">
+              <span class="category-badge">DIGITAL</span>
+              <div class="price-tag">₹340</div>
             </div>
-            <div class="down-content">
-              <span class="author">Technology Skills</span>
+            <div class="program-content">
+              <span class="instructor">Technology Skills</span>
               <h4>Digital Literacy</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 career">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
-              <span class="category">Career</span>
+        
+        <!-- Card 5: Entrepreneurship and Innovation -->
+        <div class="col-lg-4 col-md-6 mb-4 program-item leadership" data-order="5">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="assets/images/course-06.jpg" alt="Business" class="img-fluid">
+              <span class="category-badge">BUSINESS</span>
+              <div class="price-tag">₹450</div>
             </div>
-            <div class="down-content">
-              <span class="author">Professional Development</span>
-              <h4>Career Readiness & Personal Branding</h4>
+            <div class="program-content">
+              <span class="instructor">Business Skills</span>
+              <h4>Entrepreneurship and Innovation</h4>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 leadership">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Leadership</span>
+        
+        <!-- Card 6: Career Readiness & Personal Branding -->
+        <div class="col-lg-4 col-md-6 mb-4 program-item career" data-order="6">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="assets/images/course-05.jpg" alt="Career" class="img-fluid">
+              <span class="category-badge">CAREER</span>
+              <div class="price-tag">₹640</div>
             </div>
-            <div class="down-content">
-              <span class="author">Business Skills</span>
-              <h4>Entrepreneurship and Innovation</h4>
+            <div class="program-content">
+              <span class="instructor">Professional Development</span>
+              <h4>Career Readiness & Personal Branding</h4>
             </div>
           </div>
         </div>
@@ -609,108 +622,60 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-  <div class="section events" id="partner">
+  <div class="section approach" id="partner">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center mb-5">
           <div class="section-heading">
-            <h6>Schedule</h6>
-            <h2>Upcoming Events</h2>
+            <h6 class="purple-text">OUR APPROACH</h6>
+            <h2>Transforming Education Together</h2>
           </div>
         </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Web Design</span>
-                    <h4>UI Best Practices</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>16 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>22 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$120</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
+      </div>
+      <div class="row">
+        <!-- Curriculum Integration -->
+        <div class="col-lg-4 mb-4">
+          <div class="approach-card">
+            <div class="approach-icon mb-4">
+              <i class="fas fa-book-open fa-3x text-purple"></i>
             </div>
+            <h4 class="mb-3">Curriculum Integration</h4>
+            <p>By integrating Rylith Academy's curriculum, schools can provide a forward-thinking, comprehensive educational experience that is aligned with the latest educational reforms and prepares students for success in the modern world.</p>
           </div>
         </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-02.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Front End</span>
-                    <h4>New Design Trend</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>24 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>30 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$320</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
+        
+        <!-- School Partnerships -->
+        <div class="col-lg-4 mb-4">
+          <div class="approach-card">
+            <div class="approach-icon mb-4">
+              <i class="fas fa-handshake fa-3x text-purple"></i>
             </div>
+            <h4 class="mb-3">School Partnerships</h4>
+            <p>We collaborate with schools to deliver high-quality educational content that aligns with your school's goals and values. With Rylith Academy, your school can enhance its academic offerings while fostering essential skills in students.</p>
           </div>
         </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-03.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Full Stack</span>
-                    <h4>Web Programming</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>12 Mar 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>48 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$440</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
+        
+        <!-- CSR and Community Outreach -->
+        <div class="col-lg-4 mb-4">
+          <div class="approach-card">
+            <div class="approach-icon mb-4">
+              <i class="fas fa-hands-helping fa-3x text-purple"></i>
+            </div>
+            <h4 class="mb-3">CSR and Community Outreach</h4>
+            <p>Rylith Academy also partners with corporations through CSR initiatives to extend our programs to underprivileged schools, ensuring that every child has the opportunity to benefit from this progressive learning model.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <div class="cta-section bg-light p-5 rounded-lg">
+            <h3 class="mb-4">Ready to transform education at your school?</h3>
+            <div class="d-flex justify-content-center">
+              <a href="#contact" class="main-button mx-2">Request a Demo</a>
+              <a href="#contact" class="main-button mx-2">Schedule a Meeting</a>
+              <a href="#contact" class="main-button mx-2">Become a Partner</a>
             </div>
           </div>
         </div>
@@ -739,22 +704,22 @@ https://templatemo.com/tm-586-scholar
               <div class="row">
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                    <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="text" name="school" id="school" placeholder="School Name..." required>
+                    <input type="text" name="school" id="school" placeholder="School" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="">
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
@@ -824,6 +789,140 @@ https://templatemo.com/tm-586-scholar
     .service-item .main-content p {
       min-height: 80px;
       margin-bottom: 10px;
+    }
+    /* Program Cards Styles */
+    .purple-text {
+      color: #7a6ad8;
+    }
+    .filter-buttons {
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+    .filter-btn {
+      background: transparent;
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      transition: all 0.3s;
+      color: #666;
+    }
+    .filter-btn.active {
+      background-color: #7a6ad8;
+      color: white;
+      box-shadow: 0 5px 15px rgba(122, 106, 216, 0.4);
+    }
+    .program-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      background-color: white;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    .program-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .program-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .program-image img {
+      height: 220px;
+      object-fit: cover;
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+    .program-card:hover .program-image img {
+      transform: scale(1.1);
+    }
+    .category-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: white;
+      color: #7a6ad8;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 15px;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .price-tag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #7a6ad8;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .program-content {
+      padding: 20px;
+    }
+    .program-content .instructor {
+      color: #7a6ad8;
+      font-size: 14px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .program-content h4 {
+      margin: 10px 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.4;
+      min-height: 50px;
+    }
+    
+    /* Our Approach Section Styles */
+    .approach-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+    
+    .approach-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    .approach-icon {
+      color: #7a6ad8;
+      text-align: center;
+    }
+    
+    .text-purple {
+      color: #7a6ad8 !important;
+    }
+    
+    .approach-card h4 {
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+    }
+    
+    .approach-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #666;
+      text-align: center;
+    }
+    
+    .cta-section {
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .cta-section h3 {
+      font-weight: 600;
+      color: #333;
     }
     /* Footer Styles */
     footer h5 {
